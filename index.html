@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corona Remedies Private Limited</title>
+<meta name="description" content="Corona Remedies Private Limited – a pharmaceutical company committed to quality healthcare products.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:#1f2d3d;line-height:1.7;background:#fff}
+:root{--green:#0b8a5f;--dark:#073b4c;--light:#eef8f4;--accent:#14b8a6}
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1150px;margin:auto}
+/* Header */
+header{position:sticky;top:0;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);z-index:100}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.logo{font-weight:700;font-size:20px;color:var(--dark)}
+.logo span{color:var(--green)}
+.menu{display:flex;gap:28px;list-style:none}
+.menu a{font-weight:500;font-size:15px;transition:.3s}
+.menu a:hover{color:var(--green)}
+.toggle{display:none;font-size:26px;cursor:pointer;background:none;border:0}
+/* Hero */
+.hero{background:linear-gradient(135deg,rgba(7,59,76,.95),rgba(11,138,95,.9));color:#fff;padding:120px 0;text-align:center}
+.hero h1{font-size:46px;line-height:1.2;margin-bottom:18px}
+.hero p{max-width:680px;margin:auto;font-size:18px;opacity:.92}
+.btn{display:inline-block;margin-top:30px;background:#fff;color:var(--green);padding:13px 34px;border-radius:50px;font-weight:600;transition:.3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+/* Sections */
+section{padding:80px 0}
+.title{text-align:center;margin-bottom:50px}
+.title h2{font-size:34px;color:var(--dark)}
+.title p{color:#5b6b7a;max-width:620px;margin:10px auto 0}
+.title:after{content:"";display:block;width:70px;height:4px;background:var(--green);margin:16px auto 0;border-radius:4px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about .box{background:var(--light);border-radius:20px;padding:50px 30px;text-align:center}
+.about .box h3{font-size:64px;color:var(--green)}
+.about .box p{font-weight:500;color:var(--dark)}
+.about h3.h{font-size:26px;color:var(--dark);margin-bottom:14px}
+.about p{margin-bottom:14px;color:#44556a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px}
+.card{background:#fff;border-radius:16px;padding:34px 26px;box-shadow:0 6px 24px rgba(0,0,0,.07);transition:.3s;border-top:4px solid var(--green)}
+.card:hover{transform:translateY(-8px)}
+.card .icon{font-size:38px;margin-bottom:14px}
+.card h3{color:var(--dark);margin-bottom:8px;font-size:19px}
+.card p{color:#5b6b7a;font-size:15px}
+.alt{background:var(--light)}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.mv .card{border-top:0;border-left:5px solid var(--green)}
+/* Footer */
+footer{background:var(--dark);color:#cfe3ea;text-align:center;padding:34px 0;font-size:14px}
+footer strong{color:#fff}
+/* Responsive */
+@media(max-width:800px){
+.toggle{display:block}
+.menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:20px 5%;gap:16px;box-shadow:0 10px 20px rgba(0,0,0,.08)}
+.menu.show{display:flex}
+.hero{padding:80px 0}.hero h1{font-size:32px}
+.about,.mv{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+ 
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo">CORONA <span>REMEDIES</span></a>
+    <button class="toggle" onclick="document.getElementById('menu').classList.toggle('show')" aria-label="Menu">&#9776;</button>
+    <ul class="menu" id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#quality">Quality</a></li>
+    </ul>
+  </div>
+</header>
+ 
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Caring for Health,<br>Committed to Quality</h1>
+    <p>Corona Remedies Private Limited is dedicated to delivering safe, effective and affordable healthcare solutions for people and families.</p>
+    <a href="#about" class="btn">Learn More</a>
+  </div>
+</section>
+ 
+<section id="about">
+  <div class="container about">
+    <div class="box">
+      <h3>+</h3>
+      <p>Healthcare You Can Trust</p>
+    </div>
+    <div>
+      <h3 class="h">About Corona Remedies Private Limited</h3>
+      <p>Corona Remedies Private Limited is a pharmaceutical company focused on developing and supplying dependable healthcare products. We work with a simple belief: good health begins with trusted medicines and responsible business practices.</p>
+      <p>Our team combines industry knowledge, strict quality standards and a patient-first approach to support doctors, pharmacists and the communities we serve.</p>
+    </div>
+  </div>
+</section>
+ 
+<section class="alt" id="products">
+  <div class="container">
+    <div class="title">
+      <h2>Our Product Range</h2>
+      <p>A growing portfolio of healthcare products designed around everyday patient needs.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="icon">💊</div><h3>Tablets &amp; Capsules</h3><p>Reliable oral solid dosage forms prepared with care and consistency.</p></div>
+      <div class="card"><div class="icon">🧴</div><h3>Syrups &amp; Suspensions</h3><p>Easy-to-take liquid formulations for patients of all ages.</p></div>
+      <div class="card"><div class="icon">💉</div><h3>Injectables</h3><p>Sterile products manufactured under controlled conditions.</p></div>
+      <div class="card"><div class="icon">🌿</div><h3>Nutrition &amp; Wellness</h3><p>Supplements that support daily health and overall wellbeing.</p></div>
+    </div>
+  </div>
+</section>
+ 
+<section id="mission">
+  <div class="container">
+    <div class="title">
+      <h2>Our Mission &amp; Vision</h2>
+    </div>
+    <div class="mv">
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>To provide quality pharmaceutical products that improve lives, while upholding integrity, safety and ethical practices in everything we do.</p>
+      </div>
+      <div class="card">
+        <h3>Our Vision</h3>
+        <p>To become a trusted name in healthcare, recognised for quality, innovation and long-term partnerships.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section class="alt" id="quality">
+  <div class="container">
+    <div class="title">
+      <h2>Why Choose Us</h2>
+      <p>The values that guide our work every day.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="icon">✅</div><h3>Quality First</h3><p>Careful processes and checks at every stage of our work.</p></div>
+      <div class="card"><div class="icon">🔬</div><h3>Science-Driven</h3><p>Decisions guided by knowledge, research and expertise.</p></div>
+      <div class="card"><div class="icon">🤝</div><h3>Trusted Partnerships</h3><p>Building lasting relationships with healthcare professionals.</p></div>
+      <div class="card"><div class="icon">❤️</div><h3>Patient Care</h3><p>Every product is made with patient wellbeing in mind.</p></div>
+    </div>
+  </div>
+</section>
+ 
+<footer>
+  <div class="container">
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> <strong>Corona Remedies Private Limited</strong>. All rights reserved.</p>
+  </div>
+</footer>
+ 
+</body>
+</html>
